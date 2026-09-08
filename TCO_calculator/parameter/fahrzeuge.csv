@@ -1,0 +1,16 @@
+ID,Marke,Modell,Variante (Basis),Antriebsart,Fahrzeugklasse,Listenpreis UVP (EUR),Preisstand,Verbrauch WLTP,Einheit,CO2 WLTP (g/km),Hubraum (cm3),Batterie netto (kWh),Wartung EUR/Jahr,Quelle,Abrufdatum,Status
+vw-golf,VW,Golf,1.5 eTSI 116 PS DSG,Benzin,Kompaktklasse,,,,l/100 km,,,,,,,offen
+vw-troc,VW,T-Roc,1.5 eTSI 150 PS DSG,Benzin,Kompakt-SUV,,,,l/100 km,,,,,,,offen
+vw-tiguan,VW,Tiguan,2.0 TDI 150 PS DSG,Diesel,Kompakt-SUV,,,,l/100 km,,,,,,,offen
+vw-tayron,VW,Tayron,1.5 eTSI 150 PS DSG,Benzin,Mittelklasse-SUV,,,,l/100 km,,,,,,,offen
+vw-passat,VW,Passat Variant,2.0 TDI 150 PS DSG,Diesel,Mittelklasse,,,,l/100 km,,,,,,,offen
+vw-polo,VW,Polo,1.0 TSI 95 PS,Benzin,Kleinwagen,,,,l/100 km,,,,,,,offen
+vw-tcross,VW,T-Cross,1.0 TSI 115 PS,Benzin,Klein-SUV,,,,l/100 km,,,,,,,offen
+vw-taigo,VW,Taigo,1.0 TSI 95 PS,Benzin,Klein-SUV,,,,l/100 km,,,,,,,offen
+vw-id3,VW,ID.3 Neo,"Pro 58 kWh, 140 kW",BEV,Kompaktklasse,33995,04/2026,,kWh/100 km,0,0,58,,"Listenpreis, Batteriegroessen und Leistungsstufen: InsideEVs, VW ID.3 Neo Daten und Preise, 16.04.2026; bestaetigt durch InsideEVs Marktuebersicht Elektro-Kompaktwagen, 25.03.2026",06.09.2026,teilweise
+vw-id4,VW,ID.4,Pro 77 kWh,BEV,Kompakt-SUV,,,,kWh/100 km,0,0,77,,"Batteriekapazitaet netto laut Wikipedia (Volkswagen ID.4), Bandbreite 52-77 kWh nutzbar; UVP noch offen",06.09.2026,teilweise
+vw-id7,VW,ID.7,Pro 77 kWh,BEV,Mittelklasse,,,,kWh/100 km,0,0,,,,,offen
+cupra-born,Cupra,Born,"58 kWh, 150 kW",BEV,Kompaktklasse,,,,kWh/100 km,0,0,,,Batteriebandbreite 45-77 kWh laut Wikipedia (Cupra Born); Variante und UVP noch zu bestaetigen,06.09.2026,teilweise
+cupra-formentor,Cupra,Formentor,1.5 e-Hybrid 204 PS DSG,Hybrid,Kompakt-SUV,,,,l/100 km,,1498,,,"Motorisierung 1.5 TSI PHEV laut Wikipedia (Cupra Terramar, baugleicher Antrieb im Konzern); Werte modellspezifisch noch zu pruefen",06.09.2026,teilweise
+"Nicht modellspezifisch gepflegt (siehe Legende): Versicherung, Wertverlust, Kfz-Steuer-Betrag, CO2-Lebenszyklus.",,,,,,,,,,,,,,,,
+Gelb markierte Zellen sind noch zu recherchieren. Fuer FCEV und H2ICE existiert im VW-Konzern kein Serienmodell.,,,,,,,,,,,,,,,,

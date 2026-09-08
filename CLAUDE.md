@@ -126,10 +126,22 @@ Nicht modellspezifisch: Versicherung, Wertverlust, Kfz-Steuer-Betrag, CO₂-Lebe
 - UVP- und WLTP-Werte für 12 der 13 Modelle fehlen noch
 - CO₂-Pauschalen im Prototyp sind zu grob. Die TUM-Studie zeigt für den BEV-Betrieb 4–177 g/km je nach Strommix. Empfehlung: Strommix als Nutzereingabe, CO₂ als Bandbreite statt Punktwert.
 
-## Mitgelieferte Dokumente
+## Dokumente im Repository
 
-- `Pflichtenheft_TCO_Rechner_Elektromobilitaet.docx` — vollständige Anforderungsspezifikation
-- `Fahrzeugdatenbank_VW_Cupra.xlsx` — Datenbank-Arbeitsstand mit Quellenspalte
-- `tco-rechner-prototyp.jsx` — UI-Referenz, Beispieldaten, nicht produktiv
-- `artikel-tum-defossilisierung.md` — erster Content-Artikel
-- `kennzahlen-tum-studie.md` — Kennzahlen für die CO₂-Kalibrierung
+```
+docs/
+  pflichtenheft.md              vollständige Anforderungsspezifikation (maßgeblich)
+  kennzahlen-tum-studie.md      Kennzahlen für die CO2-Kalibrierung
+data/
+  fahrzeuge.csv                 13 Modelle, Quellenspalte, offene Felder leer
+  pauschalen.csv                Wertverlust, Versicherung, THG, CO2 je Antriebsart
+  energiepreise.csv             Startwerte, Quellen, Aktualisierungsrhythmus
+content/
+  artikel-tum-defossilisierung.md   erster Ratgeber-Artikel
+prototype/
+  tco-rechner-prototyp.jsx      UI-Referenz mit Beispieldaten, nicht produktiv
+```
+
+Die Word- und Excel-Fassungen (`Pflichtenheft_TCO_Rechner_Elektromobilitaet.docx`, `Fahrzeugdatenbank_VW_Cupra.xlsx`) sind inhaltsgleich und für die Weitergabe außerhalb der Entwicklung gedacht. Sie gehören **nicht** ins Repository — Binärformate lassen sich nicht sinnvoll versionieren. Bei Abweichungen gelten die Markdown- und CSV-Fassungen.
+
+Die CSV-Dateien sind der redaktionelle Arbeitsstand, nicht das Produktionsschema. Sie werden beim Aufbau der Datenbank importiert; leere Felder sind bewusst leer und dürfen nicht mit Schätzwerten gefüllt werden.

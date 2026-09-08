@@ -1,0 +1,7 @@
+Energietraeger,Quelle,Aktualisierung,Startwert,Einheit,Anmerkung
+Strom,Bundesnetzagentur / SMARD,"taeglich, gecacht",0.34,EUR/kWh,Haushaltsdurchschnitt; Eigenheimladen liegt meist darunter
+Benzin E10,Tankerkoenig-API,"taeglich, gecacht",1.79,EUR/l,"Enthaelt bereits den CO2-Preis nach BEHG, daher kein eigener Kostenposten"
+Diesel,Tankerkoenig-API,"taeglich, gecacht",1.68,EUR/l,Enthaelt bereits den CO2-Preis nach BEHG
+Wasserstoff,redaktionell gepflegt,"manuell, monatlich",13.85,EUR/kg,Keine offene Schnittstelle verfuegbar; Tankstellennetz regional sehr unterschiedlich
+"CO2-Preis BEHG 2026: Korridor 55 bis 65 EUR je Tonne, entspricht rund 15 bis 19 ct je Liter Kraftstoff.",,,,,
+"Wird nicht separat ausgewiesen, sondern per Tooltip am Energiepreis erlaeutert (Pflichtenheft 4.10).",,,,,

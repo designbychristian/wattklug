@@ -1,0 +1,8 @@
+Groesse,BEV,Benzin,Diesel,Hybrid,FCEV,Einheit,Anmerkung
+Wertverlust Jahr 1,0.28,0.24,0.25,0.27,0.34,Anteil,"Richtwert, noch gegen Restwertnotierungen zu pruefen"
+Wertverlust Folgejahre,0.13,0.12,0.12,0.13,0.16,Anteil p. a.,Bezogen auf den jeweiligen Restwert
+Versicherung Kompaktklasse,720,640,690,700,810,EUR/Jahr,"Ohne SF-Klasse und Region, im Rechner ueberschreibbar"
+THG-Quote,175,0,0,0,0,EUR/Jahr,"Marktpreis-Schaetzung, nur BEV, regelmaessig aktualisieren"
+CO2 Herstellung,9800,6200,6400,8100,10400,kg,"Lebenszyklus nach ICCT, Bandbreite in der Literatur erheblich"
+CO2 Betrieb,58,165,148,112,132,g/km,BEV nach deutschem Strommix laut UBA
+Alle Werte sind Ausgangsannahmen aus der Konzeptphase und vor dem Livegang fachlich zu belegen.,,,,,,,
