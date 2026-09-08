@@ -8,6 +8,7 @@ export type Annahmen = {
   version: string;
   stand: string;
   wertverlust: Record<Antriebsart, Wertverlustkurve>;
+  versicherungProJahr: Record<Antriebsart, number>;
   thgErloesProJahr: number;
   foerderung: {
     mindesthaltedauerMonate: number;
@@ -39,6 +40,16 @@ export const ANNAHMEN_V0_1: Annahmen = {
     diesel: { jahr1: 0.25, folgejahre: 0.12 },
     hybrid: { jahr1: 0.27, folgejahre: 0.13 },
     fcev: { jahr1: 0.34, folgejahre: 0.16 },
+  },
+
+  // Pauschale je Antriebsart, kalibriert auf Kompaktklasse, nicht modellspezifisch
+  // (Pflichtenheft 4.6). Im Rechner überschreibbar.
+  versicherungProJahr: {
+    bev: 720,
+    benzin: 640,
+    diesel: 690,
+    hybrid: 700,
+    fcev: 810,
   },
 
   thgErloesProJahr: 175,
