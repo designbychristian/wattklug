@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
 import { ANNAHMEN_V0_1 } from "@/lib/tco/annahmen";
+import type { TcoAntwort, TcoErgebnisZeile } from "@/lib/tco/api-typen";
 import { validiereTcoAnfrage, type TcoAnfrage } from "@/lib/tco/eingabe";
 import { ENERGIEPREISE_CACHE_V0_1, energiepreisFuer } from "@/lib/tco/energiepreise";
 import { fahrzeugdatenFuerKlasse, FAHRZEUGE, resolveFahrzeugdaten, type Fahrzeug } from "@/lib/tco/fahrzeuge";
@@ -54,7 +55,7 @@ export async function POST(request: Request) {
 
   const bevEingabe = eingaben.get("bev")!.eingabe;
 
-  const ergebnisse = ANTRIEBSARTEN.map((antriebsart) => {
+  const ergebnisse: TcoErgebnisZeile[] = ANTRIEBSARTEN.map((antriebsart) => {
     const { fahrzeug, eingabe } = eingaben.get(antriebsart)!;
     const tco = berechneGesamtTco(eingabe, annahmen);
     const verlauf = berechneKumulierterVerlauf(eingabe, annahmen);
@@ -66,13 +67,14 @@ export async function POST(request: Request) {
       fahrzeug: fahrzeug
         ? { id: fahrzeug.id, marke: fahrzeug.marke, modell: fahrzeug.modell, variante: fahrzeug.variante }
         : null,
+      verbrauchJe100Km: eingabe.fahrzeugdaten.verbrauchJe100Km,
       tco,
       verlauf,
       breakEvenVsBev,
     };
   });
 
-  return NextResponse.json({
+  const antwort: TcoAntwort = {
     berechnungsstand: {
       annahmenVersion: annahmen.version,
       annahmenStand: annahmen.stand,
@@ -80,7 +82,9 @@ export async function POST(request: Request) {
     },
     klasse: anfrage.klasse,
     ergebnisse,
-  });
+  };
+
+  return NextResponse.json(antwort);
 }
 
 function fahrzeugdatenFuer(
